@@ -2,7 +2,7 @@
 <aspectj>
 
 	<weaver options="-verbose -showWeaveInfo">
-		<include within="@com.example.MyAnnotation *" />
+		<include within="com.example..*" />
 	</weaver>
 
 	<aspects>

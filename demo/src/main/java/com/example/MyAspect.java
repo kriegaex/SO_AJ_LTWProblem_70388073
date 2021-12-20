@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Aspect;
 public class MyAspect {
 
 	@AfterReturning("""
-			@target(com.example.MyAnnotation)
+			@within(com.example.MyAnnotation)
 			&& (execution(* *.*(..)) || execution(* .new(..)))
 			""")
 	public void intercept(JoinPoint JoinPoint) throws Throwable {
