@@ -2,7 +2,8 @@
 <aspectj>
 
 	<weaver options="-verbose -showWeaveInfo">
-		<include within="com.example..*" />
+		<include within="@com.example.MyAnnotation *" />
+		<include within="com.example.MyAspect" />
 	</weaver>
 
 	<aspects>
